@@ -1,0 +1,8 @@
+alias docker:ps="docker ps --format "{{.ID}}: {{.Command}}" # an easy way to check what to kill
+
+# Services setup
+
+alias mongo="docker run -d -p 27017:27017 mongo"
+alias redis="docker run -d -p 6379:6379  redis"
+alias elastic5="docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana:kibana5"
+alias elastic="docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana"
