@@ -35,7 +35,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
 Clone it into `.aliases` folder in your home directory:
 ```bash
 cd ~
-git clone https://github.com/algotech/dotaliases.git .aliases
+git clone git@github.com:fega/dotaliases.git .aliases
 ```
 
 Enable bash aliases for new terminals: add to `~/.bash_profile` or `~/.profile`
