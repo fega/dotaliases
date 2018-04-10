@@ -3,6 +3,7 @@ alias g='git status -sb'
 
 # Git add and remove aliases
 alias ga='git add'
+alias ga.='git add .'
 alias gr='git rm'
 
 # Git branch alias
