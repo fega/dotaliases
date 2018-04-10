@@ -18,3 +18,11 @@ alias apt-get='sudo apt-get'
 
 # MacVim alias
 alias m='mvim .'
+
+# Visual estudio code alias
+
+alias c='code'
+alias c.='code .'
+
+# Alias volume
+alias vol='pactl set-sink-volume 0 ' # and volume 150%
