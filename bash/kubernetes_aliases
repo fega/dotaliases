@@ -1,0 +1,4 @@
+alias kuget='kubectl get pod -n'
+alias kulogs='kubectl logs -n'
+alias kulogsf='kubectl logs -f -n'
+alias kuport='kubectl port-forward -n'

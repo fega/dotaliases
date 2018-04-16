@@ -19,3 +19,4 @@ source $ALIASES_HOME/.aliases/bash/npm_aliases
 source $ALIASES_HOME/.aliases/bash/loopback_aliases
 source $ALIASES_HOME/.aliases/bash/gulp_aliases
 source $ALIASES_HOME/.aliases/bash/my_aliases
+source $ALIASES_HOME/.aliases/bash/kubernetes_aliases
