@@ -25,7 +25,12 @@ alias c.='code .'
 
 # Alias volume
 alias vol='pactl set-sink-volume 0 ' # and volume 150%
-
+alias v0='vol 0'
+alias v1='vol 100%'
+alias v2='vol 200%'
+alias v15='vol 150%'
+alias v13='vol 130%'
+alias v17='vol 170%'
 # Alias nautilus
 alias explorer='nautilus'
 alias e='nautilus'
