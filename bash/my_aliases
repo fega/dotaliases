@@ -7,6 +7,15 @@ alias redis='docker run -d -p 6379:6379  redis'
 alias elastic5='docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana:kibana5'
 alias elastic='docker run -d -p 9200:9200 -p 5601:5601 nshou/elasticsearch-kibana'
 alias janus='docker run -d -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188  efacilitation/docker-janus-webrtc-gateway:latest'
+alias mysql='docker run -e MYSQL_ROOT_PASSWORD=admin -d mysql'
 alias robomongo='~/Descargas/robo3t-1.2.1-linux-x86_64-3e50a65/bin/robo3t'
+alias apache='docker run -dit -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ httpd:2.'
 alias aliases='cd ~/.aliases'
+
 alias jenkins='kubectl port-forward -n cis $(kubectl -n cis get pod | grep -oh "jenkins-\w*-\w*") 8080'
+
+alias saformongo='kubectl port-forward -n safor-dev $(kubectl -n safor-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27019:27017'
+alias motipiomongo='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27020:27017'
+alias coachtoolsmongo='kubectl port-forward -n coachtools-dev $(kubectl -n coachtools-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27018:27017'
+
+alias motipioelastic='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev get pod | grep -oh "elasticsearch-\w*-\w*") 9220:9200'
