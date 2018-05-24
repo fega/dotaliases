@@ -5,8 +5,9 @@ alias npig='npm install -g'
 alias npid='npm install --save-dev'
 
 # Npm update
-alias npu='npm update'
+alias npu='npm-check -u'
 alias npug='npm update -g'
+alias nprm='rm -rf node_modules package-lock.json'
 
 # Npm search
 alias nps='npm start'
