@@ -32,6 +32,5 @@ alias v15='vol 150%'
 alias v13='vol 130%'
 alias v17='vol 170%'
 # Alias nautilus
-alias explorer='nautilus'
 alias e='nautilus'
 alias e.='nautilus .'
