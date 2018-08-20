@@ -20,3 +20,5 @@ alias motipiomongo='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev
 alias coachtoolsmongo='kubectl port-forward -n coachtools-dev $(kubectl -n coachtools-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27018:27017'
 
 alias motipioelastic='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev get pod | grep -oh "elasticsearch-\w*-\w*") 9220:9200'
+function title() { echo -e "\033]0;${1:?please specify a title}\007" ; } # Adds a title to tab
+

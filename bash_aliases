@@ -1,5 +1,6 @@
 alias sudo='sudo '
-
+#Colorize Bash
+PS1='\e[30;1m\u:\e[31m\w\e[0m '
 command_exists () {
     type "$1" &> /dev/null ;
 }

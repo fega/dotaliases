@@ -40,7 +40,7 @@ alias gprus='git pull --rebase upstream staging'
 alias gpod='git push origin develop'
 alias gpom='git push origin master'
 alias gpos='git push origin staging'
-
+alias gphm='git push heroku master'
 # Git push to upstream aliases
 alias gpud='git push upstream develop'
 alias gpum='git push upstream master'
