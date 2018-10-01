@@ -5,19 +5,21 @@ command_exists () {
     type "$1" &> /dev/null ;
 }
 
-ALIASES_HOME=$HOME
+# ALIASES_HOME=$HOME
+ALIASES_HOME=~/projects/fega01/aliases
+export PATH="~/Library/Android/sdk/platform-tools":$PATH
 
-source $ALIASES_HOME/.aliases/bash/apache_aliases
-source $ALIASES_HOME/.aliases/bash/cli_aliases
-source $ALIASES_HOME/.aliases/bash/git_aliases
-source $ALIASES_HOME/.aliases/bash/github_aliases
-source $ALIASES_HOME/.aliases/bash/composer_aliases
-source $ALIASES_HOME/.aliases/bash/symfony_aliases
-source $ALIASES_HOME/.aliases/bash/phpunit_aliases
-source $ALIASES_HOME/.aliases/bash/cordova_aliases
-source $ALIASES_HOME/.aliases/bash/django_aliases
-source $ALIASES_HOME/.aliases/bash/npm_aliases
-source $ALIASES_HOME/.aliases/bash/loopback_aliases
-source $ALIASES_HOME/.aliases/bash/gulp_aliases
-source $ALIASES_HOME/.aliases/bash/my_aliases
-source $ALIASES_HOME/.aliases/bash/kubernetes_aliases
+source $ALIASES_HOME/bash/apache_aliases
+source $ALIASES_HOME/bash/cli_aliases
+source $ALIASES_HOME/bash/git_aliases
+source $ALIASES_HOME/bash/github_aliases
+source $ALIASES_HOME/bash/composer_aliases
+source $ALIASES_HOME/bash/symfony_aliases
+source $ALIASES_HOME/bash/phpunit_aliases
+source $ALIASES_HOME/bash/cordova_aliases
+source $ALIASES_HOME/bash/django_aliases
+source $ALIASES_HOME/bash/npm_aliases
+source $ALIASES_HOME/bash/loopback_aliases
+source $ALIASES_HOME/bash/gulp_aliases
+source $ALIASES_HOME/bash/my_aliases
+source $ALIASES_HOME/bash/kubernetes_aliases
