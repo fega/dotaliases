@@ -13,6 +13,11 @@ alias apache='docker run -dit -p 8080:80 -v "$PWD":/usr/local/apache2/htdocs/ ht
 alias aliases='cd ~/.aliases'
 alias selenium='docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.14.0-dubnium'
 
+alias mavtek
+alias dobuild='docker build --progress plain --no-cache --pull .'
+alias dosleave='docker swarm leave -f'
+alias dosdesktop='open -a Docker'
+
 alias jenkins='kubectl port-forward -n cis $(kubectl -n cis get pod | grep -oh "jenkins-\w*-\w*") 8080'
 
 #alias saformongo='kubectl port-forward -n safor-dev $(kubectl -n safor-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27019:27017'
@@ -20,13 +25,40 @@ alias jenkins='kubectl port-forward -n cis $(kubectl -n cis get pod | grep -oh "
 # alias coachtoolsmongo='kubectl port-forward -n coachtools-dev $(kubectl -n coachtools-dev get pod | grep -oh "mongodb-\w*-\w*" | head -1) 27018:27017'
 
 # alias motipioelastic='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev get pod | grep -oh "elasticsearch-\w*-\w*") 9220:9200'
-function title() { echo -e "\033]0;${1:?please specify a title}\007" ; } # Adds a title to tab
+# function title() { echo -e "\033]0;${1:?please specify a title}\007" ; } # Adds a title to tab
 
-alias cdathena='cd ~; cd fabian/athena-legal';
-alias cdmavtek='cd ~; fabian/mavtek';
+alias cdpersonal='cd ~/fabian/personal';
+alias cdaliases='cd ~/fabian/personal/dotaliases';
 # Open Fabian's Chrome profile
 alias crfabian='open -a "Google Chrome" -n --args --profile-directory="Profile 1"'
+
+
+#
+# ATHENA ALIASES
+#
+alias cdathena='cd ~/fabian/athena-legal';
+alias athena-report='echo "What I did yesterday:\n 1. \nMy plan for today:\n 1. \nBlockers: \n 1." | pbcopy'
+#
+# MAVTEK ALIASES
+#
 # Open mavtek's Chrome profile
+alias cdmavtek='cd ~/fabian/mavtek';
+alias cdmanyvids='cd ~/Projects/MV/manyvids-source';
 alias crmavtek='open -a "Google Chrome" -n --args --profile-directory="Profile 2"'
+alias mavtek-vpn-start='open -gja "tunnelblick" && tunnelblickctl connect "Mavtek Remote"'
+alias mavtek-legacy-start='open -gja "tunnelblick" && tunnelblickctl connect "Mavtek Remote" ; dosdesktop && sh ~/Projects/laravel-setup-dev/mv-social-bin/swarmpit-installer.sh'
+alias mavtek-legacy-stop="dosleave"
+alias mavtek-profile-kiwi-start="sh ~/fabian/mavtek/run-mfe-profile-kiwi.sh"
 # Open Athena's Chrome profile
 alias crathena='open -a "Google Chrome" -n --args --profile-directory="Profile 6"'
+
+#removers
+alias rmnode_modules='rm -rf node_modules'
+# remove npm tokens
+alias rm.npm='rm -rf ~/.npmrc'
+# remove aws config
+alias rm.aws='rm -rf ~/.aws'
+# QUICK SEARCH IN DUCK DUCK GO
+alias s='ddgr -x'
+# QUICK SEARCH IN DUCK DUCK GO + I´m feeling lucky
+alias sl='ddgr -x -j'

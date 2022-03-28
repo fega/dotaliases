@@ -1,0 +1,71 @@
+
+# show app switcherr in all screens
+defaults write com.apple.Dock appswitcher-all-displays -bool true
+killall Dock
+# Install diff tool
+# https://github.com/bigH/git-fuzzy
+
+brew install fzf
+git clone https://github.com/bigH/git-fuzzy.git
+echo "export PATH=\"$(pwd)/git-fuzzy/bin:\$PATH\"" >> ~/.zshrc
+
+# googler search tool
+brew install
+  # duck duck go search tool
+  ddgr \
+  # email client and tools
+  neomutt \
+  w3m \
+  mailcap \
+  # a replacemement for postman
+  httpie jq\
+  # command correction
+  thefuck \
+  # node version manager
+  nvm yarn \
+  # programming languages
+  go rust\
+  # to download youtube videos
+  youtube-dl \
+  # a better cat
+  bat \
+  # alternative to grep
+  ack \
+  # file converter
+  pandoc \
+  # ocr utility
+  tesseract \
+  # tunnelblick ctl
+  tunnelblickctl \
+  # for testing cloudformation templates
+  cfn-lint \
+  # other well known utilities
+  git awscli vim curl docker htop lynx ffmpeg aws-sam-cli
+  #
+
+brew tap browsh-org/homebrew-browsh
+brew install browsh
+brew install --cask \
+  mysqlworkbench \
+  slack \
+  notion \
+  tunnelblick \
+  visual-studio-code \
+  postman \
+  iterm2 \
+  telegram \
+  whatsapp \
+  spotify \
+  kindle \
+  google-chrome \
+  notunes \
+  dynamodb-local \
+  amazon-ecs-cli 
+npm i -g moro 
+
+gem install terjira
+gem install timetrap
+
+# add brew dynamodb-local
+# add font-fira-code iterm2 postman robo-3t visual-studio-code
+mas install 441258766

@@ -14,8 +14,11 @@ alias nps='npm start'
 
 # Other
 
-alias ndev='npm run dev'
-alias nps='npm run dev'
-alias nt='npm run test'
-alias ntw='npm run test:watch'
-alias nbw='npm run test:watch'
+alias ndev='yarn dev'
+alias nt='yarn test'
+alias ntw='yarn test:watch'
+alias nbw='yarn test:watch'
+
+alias yd='yarn dev'
+alias yt='yarn test'
+alias yb='yarn build'
