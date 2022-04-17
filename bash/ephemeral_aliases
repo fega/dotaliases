@@ -1,0 +1,3 @@
+# those are aliases that I create during my work without thinking so much where it should be belong,
+# this list will grow until I eiter prune or organize it
+alias athena-deploy-heroku-kyc="yarn build know-your-client-ms --webpack && cp -r dist/apps/know-your-client-ms/. ../heroku-kyc-ms && cd ../heroku-kyc-ms/ && git add . && git commit -mupdate && git push heroku master"

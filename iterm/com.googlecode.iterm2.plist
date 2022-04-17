@@ -732,7 +732,7 @@
 			<key>Normal Font</key>
 			<string>Monaco 12</string>
 			<key>Open Toolbelt</key>
-			<true/>
+			<false/>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1099,7 +1099,7 @@
 					<key>action</key>
 					<string>iTermHyperlinkTrigger</string>
 					<key>parameter</key>
-					<string>https://athena-legal.atlassian.net/browse/\0</string>
+					<string>https://\0</string>
 					<key>regex</key>
 					<string>PRD-\d{1,4}</string>
 				</dict>

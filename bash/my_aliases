@@ -62,3 +62,58 @@ alias rm.aws='rm -rf ~/.aws'
 alias s='ddgr -x'
 # QUICK SEARCH IN DUCK DUCK GO + I´m feeling lucky
 alias sl='ddgr -x -j'
+
+# block distracting websites
+alias block-websites='
+sudo sh -c "echo `
+127.0.0.1	www.facebook.com
+127.0.0.1	www.youtube.com
+127.0.0.1	www.linkedin.com
+127.0.0.1	www.instagram.com
+127.0.0.1	www.quora.com
+127.0.0.1	www.reddit.com 
+127.0.0.1	www.wikipedia.com
+
+127.0.0.1	facebook.com
+127.0.0.1	youtube.com
+127.0.0.1	linkedin.com
+127.0.0.1	instagram.com
+127.0.0.1	quora.com
+127.0.0.1	reddit.com
+127.0.0.1	wikipedia.com` >> /etc/hosts"'
+
+sudo sh -c "echo '
+127.0.0.1	www.facebook.com
+127.0.0.1	www.youtube.com
+127.0.0.1	www.linkedin.com
+127.0.0.1	www.instagram.com
+127.0.0.1	www.quora.com
+127.0.0.1	www.reddit.com 
+127.0.0.1	www.wikipedia.com
+
+127.0.0.1	facebook.com
+127.0.0.1	youtube.com
+127.0.0.1	linkedin.com
+127.0.0.1	instagram.com
+127.0.0.1	quora.com
+127.0.0.1	reddit.com
+127.0.0.1	wikipedia.com' >> /etc/hosts" 
+
+alias unblock-websites='
+sudo sed -i copy "/127\.0\.0\.1	www.facebook\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.youtube\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.linkedin\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.instagram\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.quora\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.reddit\.com/g " /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	www\.wikipedia\.com/g" /etc/hosts;
+
+sudo sed -i copy "/127\.0\.0\.1	facebook\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	youtube\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	linkedin\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	instagram\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	quora\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	reddit\.com/g" /etc/hosts;
+sudo sed -i copy "/127\.0\.0\.1	wikipedia\.com/g" /etc/hosts;
+sudo sed -i copy "/^[[:space:]]*$/d" /etc/hosts
+'

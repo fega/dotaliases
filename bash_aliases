@@ -1,8 +1,21 @@
 # alias sudo='sudo '
+echo "Bash Aliases loaded"
 
 # ALIASES_HOME=$HOME
 export ALIASES_HOME="$HOME/fabian/personal/dotaliases";
 # export PATH="~/Library/Android/sdk/platform-tools":$PATH
+
+# path of this file
+# usage: echo alias="XXXXXX" >> savealias
+
+savealias(){
+  ALIAS_FILE="$ALIASES_HOME/bash/ephemeral_aliases"
+  echo "Saving alias '$@' in $ALIAS_FILE"
+  echo "Alias Name?"
+  read ALIAS_NAME
+  echo "alias $ALIAS_NAME=\"$@\"" >> $ALIAS_FILE
+  source ~/.zshrc
+}
 
 # source $ALIASES_HOME/bash/apache_aliases
 source $ALIASES_HOME/bash/cli_aliases
@@ -10,6 +23,7 @@ source $ALIASES_HOME/bash/npm_aliases
 source $ALIASES_HOME/bash/my_aliases
 source $ALIASES_HOME/bash/attlasian_aliases
 source $ALIASES_HOME/bash/git_aliases
+source $ALIASES_HOME/bash/ephemeral_aliases
 # source $ALIASES_HOME/bash/github_aliases
 # source $ALIASES_HOME/bash/composer_aliases
 # source $ALIASES_HOME/bash/symfony_aliases
