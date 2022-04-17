@@ -82,23 +82,6 @@ sudo sh -c "echo `
 127.0.0.1	reddit.com
 127.0.0.1	wikipedia.com` >> /etc/hosts"'
 
-sudo sh -c "echo '
-127.0.0.1	www.facebook.com
-127.0.0.1	www.youtube.com
-127.0.0.1	www.linkedin.com
-127.0.0.1	www.instagram.com
-127.0.0.1	www.quora.com
-127.0.0.1	www.reddit.com 
-127.0.0.1	www.wikipedia.com
-
-127.0.0.1	facebook.com
-127.0.0.1	youtube.com
-127.0.0.1	linkedin.com
-127.0.0.1	instagram.com
-127.0.0.1	quora.com
-127.0.0.1	reddit.com
-127.0.0.1	wikipedia.com' >> /etc/hosts" 
-
 alias unblock-websites='
 sudo sed -i copy "/127\.0\.0\.1	www.facebook\.com/g" /etc/hosts;
 sudo sed -i copy "/127\.0\.0\.1	www\.youtube\.com/g" /etc/hosts;
