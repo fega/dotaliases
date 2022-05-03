@@ -1099,7 +1099,7 @@
 					<key>action</key>
 					<string>iTermHyperlinkTrigger</string>
 					<key>parameter</key>
-					<string>https://\0</string>
+					<string>https://athena-legal.atlassian.net/browse/\0</string>
 					<key>regex</key>
 					<string>PRD-\d{1,4}</string>
 				</dict>

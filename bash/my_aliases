@@ -29,6 +29,7 @@ alias jenkins='kubectl port-forward -n cis $(kubectl -n cis get pod | grep -oh "
 
 alias cdpersonal='cd ~/fabian/personal';
 alias cdaliases='cd ~/fabian/personal/dotaliases';
+alias caliases='c ~/fabian/personal/dotaliases';
 # Open Fabian's Chrome profile
 alias crfabian='open -a "Google Chrome" -n --args --profile-directory="Profile 1"'
 
@@ -43,12 +44,20 @@ alias athena-report='echo "What I did yesterday:\n 1. \nMy plan for today:\n 1. 
 #
 # Open mavtek's Chrome profile
 alias cdmavtek='cd ~/fabian/mavtek';
+alias cdmavtekbe='cd ~/fabian/mavtek/profile-bff';
+alias cdmavtekprofilemfe='cd ~/fabian/mavtek/mfe-profile';
+alias cdmavteklandermfe='cd ~/fabian/mavtek/mfe-mv-stars-lander';
 alias cdmanyvids='cd ~/Projects/MV/manyvids-source';
+
 alias crmavtek='open -a "Google Chrome" -n --args --profile-directory="Profile 2"'
+alias crmavtek='open -a "Google Chrome" -n --args --profile-directory="Profile 2"'
+alias crmavtek-tasks='open -a "Google Chrome" -n --args --profile-directory="Profile 2"'
+
 alias mavtek-vpn-start='open -gja "tunnelblick" && tunnelblickctl connect "Mavtek Remote"'
 alias mavtek-legacy-start='open -gja "tunnelblick" && tunnelblickctl connect "Mavtek Remote" ; dosdesktop && sh ~/Projects/laravel-setup-dev/mv-social-bin/swarmpit-installer.sh'
 alias mavtek-legacy-stop="dosleave"
-alias mavtek-profile-kiwi-start="sh ~/fabian/mavtek/run-mfe-profile-kiwi.sh"
+alias mavtek-profile-kiwi-start="cd ~/fabian/mavtek/ && sh ~/fabian/mavtek/run-mfe-profile-kiwi.sh"
+alias mavtek-lander-kiwi-start="cd ~/fabian/mavtek/ && sh ~/fabian/mavtek/run-mfe-lander-kiwi.sh"
 # Open Athena's Chrome profile
 alias crathena='open -a "Google Chrome" -n --args --profile-directory="Profile 6"'
 
@@ -65,7 +74,7 @@ alias sl='ddgr -x -j'
 
 # block distracting websites
 alias block-websites='
-sudo sh -c "echo `
+sudo sh -c "echo \"
 127.0.0.1	www.facebook.com
 127.0.0.1	www.youtube.com
 127.0.0.1	www.linkedin.com
@@ -80,7 +89,7 @@ sudo sh -c "echo `
 127.0.0.1	instagram.com
 127.0.0.1	quora.com
 127.0.0.1	reddit.com
-127.0.0.1	wikipedia.com` >> /etc/hosts"'
+127.0.0.1	wikipedia.com\" >> /etc/hosts"'
 
 alias unblock-websites='
 sudo sed -i copy "/127\.0\.0\.1	www.facebook\.com/g" /etc/hosts;

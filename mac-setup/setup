@@ -5,7 +5,7 @@ killall Dock
 # Install diff tool
 # https://github.com/bigH/git-fuzzy
 
-brew install fzf
+brew install fzf git-delta exa
 git clone https://github.com/bigH/git-fuzzy.git
 echo "export PATH=\"$(pwd)/git-fuzzy/bin:\$PATH\"" >> ~/.zshrc
 
