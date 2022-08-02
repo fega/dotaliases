@@ -12,7 +12,7 @@ alias ga.='git add .'
 # # Git commit aliases
 # alias gc='git commit'
 # alias gca='git commit --amend'
-# alias gcm='git commit -m'
+alias gcm='git commit -m'
 
 # # Git checkout aliases
 # alias gcod='git checkout develop'
@@ -72,11 +72,15 @@ alias gitpushu='eval `git push 2>&1 | grep "git push"`'
 # get name of repo
 alias gname="basename -s .git `git config --get remote.origin.url`"
 
-
+alias git-derived=""
+git-derived-branch() {
+    git checkout -b `git rev-parse --abbrev-ref HEAD`-"$1"
+}
 # GIT FUZZY CONFIG
 
 export GF_GREP_COLOR='1;30;48;5;15'
 # export GF_BAT_STYLE=changes
 # export GF_BAT_THEME=zenburn
 export GIT_FUZZY_STATUS_ADD_KEY='Ctrl-A'
+export TURBO_COMMIT_LINT='yes'
 # export GF_PREFERRED_PAGER="delta --theme=gruvbox --highlight-removed -w __WIDTH__"
