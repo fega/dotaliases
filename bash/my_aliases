@@ -34,25 +34,37 @@ alias jenkins='kubectl port-forward -n cis $(kubectl -n cis get pod | grep -oh "
 # alias motipioelastic='kubectl port-forward -n motipio-dev $(kubectl -n motipio-dev get pod | grep -oh "elasticsearch-\w*-\w*") 9220:9200'
 # function title() { echo -e "\033]0;${1:?please specify a title}\007" ; } # Adds a title to tab
 
-alias cdpersonal='cd ~/fabian/personal';
-alias cdaliases='cd ~/fabian/personal/dotaliases';
-alias caliases='c ~/fabian/personal/dotaliases';
+alias cdpersonal='cd ~/projects/personal';
+alias cdaliases='cd ~/projects/personal/dotaliases';
+alias caliases='c ~/projects/personal/dotaliases';
 # Open Fabian's Chrome profile
 alias crfabian='open -a "Google Chrome" -n --args --profile-directory="Profile 1"'
 alias crunsafe='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security'
 #
 # ATHENA ALIASES
 #
-alias cdathena='cd ~/fabian/athena-legal';
+alias cdathena='cd ~/projects/athena-legal';
+alias cdathenab='cd ~/projects/athena-legal/backend-monorepo';
+alias cdathenaf='cd ~/projects/athena-legal/frontend-ui-platform';
 alias athena-report='echo "What I did yesterday:\n 1. \nMy plan for today:\n 1. \nBlockers: \n 1." | pbcopy'
+
+# MAMORU ALIASES
+alias cdmamorube='cd ~/projects/toshi/centralized-mamoru';
+alias cdmamorufe='cd ~/projects/toshi/frontend';
+alias crmamoru='open -a "Google Chrome" -n --args --profile-directory="Profile 8"'
+
+# OPENGOV ALIASES
+alias cdopengov='cd ~/projects/opengov';
+alias cdopengovbe='cd ~/projects/opengov/backend';
+alias cropengov='open -a "Google Chrome" -n --args --profile-directory="Profile 9" $(pbpaste)'
 #
 # MAVTEK ALIASES
 #
 # Open mavtek's Chrome profile
-alias cdmavtek='cd ~/fabian/mavtek';
-alias cdmavtekbe='cd ~/fabian/mavtek/profile-bff';
-alias cdmavtekprofilemfe='cd ~/fabian/mavtek/mfe-profile';
-alias cdmavteklandermfe='cd ~/fabian/mavtek/mfe-mv-stars-lander';
+alias cdmavtek='cd ~/projects/mavtek';
+alias cdmavtekbe='cd ~/projects/mavtek/profile-bff';
+alias cdmavtekprofilemfe='cd ~/projects/mavtek/mfe-profile';
+alias cdmavteklandermfe='cd ~/projects/mavtek/mfe-mv-stars-lander';
 alias cdmanyvids='cd ~/Projects/MV/manyvids-source';
 
 alias crmavtek='open -a "Google Chrome" -n --args --profile-directory="Profile 2"'
@@ -62,8 +74,8 @@ alias crmavtek-tasks='open -a "Google Chrome" -n --args --profile-directory="Pro
 # alias mavtek-vpn-start='open -gja "tunnelblick" && tunnelblickctl connect "Mavtek Remote"'
 alias mavtek-legacy-start='dosdesktop && sh ~/Projects/laravel-setup-dev/mv-social-bin/swarmpit-installer.sh'
 alias mavtek-legacy-stop="dosleave"
-alias mavtek-profile-kiwi-start="cd ~/fabian/mavtek/ && sh ~/fabian/mavtek/run-mfe-profile-kiwi.sh"
-alias mavtek-lander-kiwi-start="cd ~/fabian/mavtek/ && sh ~/fabian/mavtek/run-mfe-lander-kiwi.sh"
+alias mavtek-profile-kiwi-start="cd ~/projects/mavtek/ && sh ~/projects/mavtek/run-mfe-profile-kiwi.sh"
+alias mavtek-lander-kiwi-start="cd ~/projects/mavtek/ && sh ~/projects/mavtek/run-mfe-lander-kiwi.sh"
 # Open Athena's Chrome profile
 alias crathena='open -a "Google Chrome" -n --args --profile-directory="Profile 6"'
 

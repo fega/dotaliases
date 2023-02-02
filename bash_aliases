@@ -2,7 +2,7 @@
 echo "Bash Aliases loaded"
 
 # ALIASES_HOME=$HOME
-export ALIASES_HOME="$HOME/fabian/personal/dotaliases";
+export ALIASES_HOME="$HOME/projects/personal/dotaliases";
 # export PATH="~/Library/Android/sdk/platform-tools":$PATH
 
 # path of this file
