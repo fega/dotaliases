@@ -72,6 +72,13 @@ alias gitpushu='eval `git push 2>&1 | grep "git push"`'
 # get name of repo
 alias gname="basename -s .git `git config --get remote.origin.url`"
 
+alias gcstyle='git commit -m "style: style fixes"'
+alias gcchore='git commit -m "chore:'
+alias gcfix='git commit -m "fix:'
+alias gcfeat='git commit -m "feat:'
+alias gcrevert='git commit -m "revert:'
+alias gcrefactor='git commit -m "refactor:'
+
 alias git-derived=""
 git-derived-branch() {
     git checkout -b `git rev-parse --abbrev-ref HEAD`-"$1"
