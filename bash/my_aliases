@@ -49,10 +49,11 @@ alias athena-report='echo "What I did yesterday:\n 1. \nMy plan for today:\n 1. 
 
 # MAMORU ALIASES
 alias cdmamorube='cd ~/projects/toshi/centralized-mamoru';
+alias cdmamoru='cd ~/projects/toshi';
 alias cdmamorufe='cd ~/projects/toshi/frontend';
 alias cdmamoruvc='cd ~/projects/toshi/validation-chain';
 alias crmamoru='open -a "Google Chrome" -n --args --profile-directory="Profile 8"'
-
+alias tskmamoru='cdmamoru && crmamoru https://zokyo.atlassian.net/jira/software/projects/MAMORU/boards/59'
 
 # OPENGOV ALIASES
 alias cdopengov='cd ~/projects/opengov';
