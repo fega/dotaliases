@@ -8,10 +8,10 @@
 # alias ff='find . -name $1'
 
 # change directories easily
-# alias ..='cd ..'
-# alias ...='cd ../..'
-# alias ....='cd ../../..'
-# alias .....='cd ../../../..'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
 
 # apt get
 # alias apt-get='sudo apt-get'

@@ -4,6 +4,8 @@
 # # Git add and remove aliases
 # alias ga='git add'
 alias ga.='git add .'
+alias gp='git push'
+alias gcb='git checkout -b'
 # alias gr='git rm'
 
 # # Git branch alias
