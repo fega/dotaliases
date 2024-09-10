@@ -55,10 +55,6 @@ alias cdmamoruvc='cd ~/projects/toshi/validation-chain';
 alias crmamoru='open -a "Google Chrome" -n --args --profile-directory="Profile 8"'
 alias tskmamoru='cdmamoru && crmamoru https://zokyo.atlassian.net/jira/software/projects/MAMORU/boards/59'
 
-# OPENGOV ALIASES
-alias cdopengov='cd ~/projects/opengov';
-alias cdopengovbe='cd ~/projects/opengov/backend';
-alias cropengov='open -a "Google Chrome" -n --args --profile-directory="Profile 9" $(pbpaste)'
 #
 # MAVTEK ALIASES
 #

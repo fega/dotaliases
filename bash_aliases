@@ -2,7 +2,7 @@
 echo "Bash Aliases loaded"
 
 # ALIASES_HOME=$HOME
-export ALIASES_HOME="$HOME/projects/personal/dotaliases";
+export ALIASES_HOME="/c/Users/zbook/OneDrive/Escritorio/dotaliases/";
 # export PATH="~/Library/Android/sdk/platform-tools":$PATH
 
 # path of this file
@@ -24,6 +24,8 @@ source $ALIASES_HOME/bash/my_aliases
 source $ALIASES_HOME/bash/attlasian_aliases
 source $ALIASES_HOME/bash/git_aliases
 source $ALIASES_HOME/bash/ephemeral_aliases
+source $ALIASES_HOME/bash/aws_aliases
+source $ALIASES_HOME/bash/og_stuff.sh
 # source $ALIASES_HOME/bash/github_aliases
 # source $ALIASES_HOME/bash/composer_aliases
 # source $ALIASES_HOME/bash/symfony_aliases
